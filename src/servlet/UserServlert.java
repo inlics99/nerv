@@ -32,8 +32,8 @@ public class UserServlert extends HttpServlet {
 		String name=req.getParameter("name");
 		//强转需要包装类,对数据进行转换
 		int age=Integer.parseInt(req.getParameter("age"));
-		user.setName(name);
-		user.setAge(age);
+		user.setName("张三");
+		user.setAge(20);
 		us.save(user);
 	}
 
